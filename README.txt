@@ -1,32 +1,18 @@
-Plugin Builder Results
+This is the second release of the Active FIre plugin!  
+It had been modified in order fix the problems earlier users experienced with the downloads of the fire data.
+It also includes a counter for the number of fire pixels in the data.  
 
-Your plugin ActivefireV2 was created in:
-    C:\Users\admin\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\active_fire2
+The plugin downloads Active Fire data from the past 24 hours from NASA's website where it is freely available, and displays it in the QGIS project.  
+The website can be found here: https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms/active-fire-data
 
-Your QGIS plugin directory is located at:
-    C:/Users/admin/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins
+The user can choose between two kind of data:
 
-What's Next:
+-Data from MODIS C6 
+-Data from VIIRS
 
-  * Copy the entire directory containing your new plugin to the QGIS plugin
-    directory
+Then the user can exit the plugin by pressing the 'Exit' button.
 
-  * Compile the resources file using pyrcc5
+The plugin is designed to only allow the download of a dataset if there is no other layer with the same name in the project, in order not avoid too many layers being added by clicking mistake. The user can still download both data from MODIS C6 and VIIRS in the same project.  
 
-  * Run the tests (``make test``)
-
-  * Test the plugin by enabling it in the QGIS plugin manager
-
-  * Customize it by editing the implementation file: ``active_fire2.py``
-
-  * Create your own custom icon, replacing the default icon.png
-
-  * Modify your user interface by opening ActivefireV2_dialog_base.ui in Qt Designer
-
-  * You can use the Makefile to compile your Ui and resource files when
-    you make changes. This requires GNU make (gmake)
-
-For more information, see the PyQGIS Developer Cookbook at:
-http://www.qgis.org/pyqgis-cookbook/index.html
-
-(C) 2011-2018 GeoApt LLC - geoapt.com
+This plugin was developed by Pawel Dzierzynski from The Map Workshop
+Contact: pawel.jan.dzierzynski@gmail.com  
